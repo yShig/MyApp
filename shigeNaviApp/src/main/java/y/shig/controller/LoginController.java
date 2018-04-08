@@ -7,7 +7,6 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import y.shig.Entity.MyData;
-import y.shig.repositories.MyDataRepository;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
@@ -22,8 +21,8 @@ public class LoginController {
     public String index(@ModelAttribute("formModel") MyData myData, Model model) {
 
         model.addAttribute("msg", "this is sample contents.");
-        Iterable<MyData> list = myDataRepository.findAll();
-        model.addAttribute("datalist", list);
+/*        Iterable<MyData> list = myDataRepository.findAll();
+        model.addAttribute("datalist", list);*/
 
         return "login";
     }

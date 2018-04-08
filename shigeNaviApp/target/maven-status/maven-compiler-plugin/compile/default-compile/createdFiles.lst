@@ -1,8 +1,7 @@
-y\shig\repositories\MyDataRepository.class
 y\shig\CommonConst.class
 y\shig\validator\memoValidator.class
-y\shig\controller\HelloController.class
 y\shig\Annotation\Memo.class
 y\shig\Entity\MyData.class
-y\shig\BingoApp.class
 y\shig\Entity\DataObject.class
+y\shig\controller\LoginController.class
+y\shig\ShigeNaviApp.class

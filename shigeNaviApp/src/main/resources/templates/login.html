@@ -6,14 +6,14 @@
           content="text/html; charset=UTF-8"/>
 </head>
 <body>
-<h1 th:text="#{content.title}">login page</h1>
-    <form method="post" action="/top" th:object="${formModel}">
-        <label>ID</label>
-        <input type="text" />
-        <label>password</label>
-        <input type="password" />
+<h1 th:text="#{content.title}">login page2</h1>
+<form method="post" action="/login" th:action="@{'/login'}" th:object="${formModel}">
+    <label>ID</label>
+    <input type="text" />
+    <label>password</label>
+    <input type="password" />
 
-        <input type="submit"/>
-    </form>
+    <input type="submit" th:value="ログイン" value="ログイン"/>
+</form>
 </body>
 </html>
